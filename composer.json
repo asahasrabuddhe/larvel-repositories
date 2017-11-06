@@ -1,0 +1,45 @@
+{
+    "name": "asahasrabuddhe/laravel-repository",
+    "description": "Enable Repository Pattern for Laravel 5 based Projects",
+    "type": "laravel-package",
+    "authors": [
+        {
+            "name": "Ajitem Sahasrabuddhe",
+            "email": "ajitem.s@outlook.com"
+        }
+    ],
+    "keywords": ["laravel", "repository", "repositories", "eloquent", "database"],
+    "require": {
+        "php": ">=7.0",
+        "illuminate/support": "^5.2",
+        "illuminate/database": "^5.2",
+        "illuminate/filesystem": "^5.2",
+        "illuminate/console": "^5.2"
+    },
+    "require-dev": {
+        "mockery/mockery": "dev-master@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Asahasrabuddhe\\Repositories\\": "src/Repositories/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Asahasrabuddhe\\Repositories\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.x-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Asahasrabuddhe\\Repositories\\Providers\\RepositoryProvider"
+            ],
+            "aliases": {}
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
